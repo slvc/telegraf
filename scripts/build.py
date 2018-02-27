@@ -55,7 +55,7 @@ prereqs = [ 'git', 'go' ]
 go_vet_command = "go tool vet -composites=true ./"
 optional_prereqs = [ 'gvm', 'fpm', 'rpmbuild' ]
 
-fpm_common_args = "-f -s dir --log error \
+fpm_common_args = "-f -s dir --rpm-os linux --log error \
  --vendor {} \
  --url {} \
  --license {} \
